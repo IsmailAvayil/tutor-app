@@ -27,7 +27,7 @@ const tutorStatusDatas = [
     grade: "Grade 3 Maths",
     tutors: [
       {
-        reg_id: 21,
+        reg_id: 23,
         name: "Sheila Moore",
         profile_image:
           "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
@@ -41,10 +41,70 @@ const tutorStatusDatas = [
     grade: "Grade 3 Maths",
     tutors: [
       {
-        reg_id: 21,
+        reg_id: 24,
         name: "John F Kennedy",
         profile_image:
           "https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      },
+    ],
+    teaching_mode: "Online",
+    teaching_date: "FRIDAY, MAY 12",
+  },
+  {
+    id: 4,
+
+    tutors: [
+      {
+        reg_id: 25,
+        name: "Sheila Moore",
+        profile_image:
+          "https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      },
+      {
+        reg_id: 26,
+        name: "Mackle Moore",
+        profile_image:
+          "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      },
+    ],
+    teaching_mode: "Online",
+    teaching_date: "FRIDAY, MAY 12",
+  },
+  {
+    id: 1,
+
+    tutors: [
+      {
+        reg_id: 27,
+        name: "Sheila Moore",
+        profile_image:
+          "https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      },
+      {
+        reg_id: 28,
+        name: "Mackle Moore",
+        profile_image:
+          "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      },
+    ],
+    teaching_mode: "Online",
+    teaching_date: "FRIDAY, MAY 12",
+  },
+  {
+    id: 1,
+
+    tutors: [
+      {
+        reg_id: 29,
+        name: "Sheila Moore",
+        profile_image:
+          "https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      },
+      {
+        reg_id: 30,
+        name: "Mackle Moore",
+        profile_image:
+          "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
       },
     ],
     teaching_mode: "Online",
