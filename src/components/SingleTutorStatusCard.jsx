@@ -7,6 +7,7 @@ const SingleTutorStatusCard = ({
   index,
   isUpcomingSession,
 }) => {
+  console.log("tutorstatusData", tutorStatusData);
   return (
     <div key={tutorStatusData.id} className="grid grid-cols-12 ">
       <div className="col-span-1 flex items-start">
@@ -25,7 +26,8 @@ const SingleTutorStatusCard = ({
                 .map((tutor) =>
                   Array.isArray(tutor.name) ? tutor.name.join(", ") : tutor.name
                 )
-                .join(", ")}
+                .join(", ")}{" "}
+              {tutorStatusData?.grade && "| " + tutorStatusData?.grade}
             </li>
           </ul>
 

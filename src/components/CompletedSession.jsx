@@ -1,10 +1,10 @@
 import Card from "./Card";
 import TutorStatus from "./TutorStatus";
 
-const TutorStatusDatas = [
+const tutorStatusDatas = [
   {
     id: 1,
-    grade: "Grade 3 Maths",
+
     tutors: [
       {
         reg_id: 21,
@@ -58,7 +58,7 @@ const CompletedSession = () => {
       <h1 className="font-semibold text-info">Completed</h1>
       <TutorStatus
         isUpcomingSession={false}
-        TutorStatusDatas={TutorStatusDatas}
+        tutorStatusDatas={tutorStatusDatas}
       />
     </Card>
   );
