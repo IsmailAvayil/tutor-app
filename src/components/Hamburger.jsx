@@ -3,8 +3,9 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import HeaderNavigations from "./HeaderNavigations";
 import UserProfile from "./UserProfile";
 import TabsMenus from "./TabsMenus";
-import { tabs } from "../data/TabNavigationData";
+
 import { AppContext } from "../context/TabsConext";
+import { tabNavigationMenus } from "../data/TabNavigationMenus";
 
 const Hamburger = () => {
   const [isOpenLeftMenus, setIsOpenLeftMenus] = useState(false);
@@ -31,7 +32,7 @@ const Hamburger = () => {
         <div className="absolute top-16 left-0 w-1/2 h-full bg-white z-10">
           <UserProfile />
           <TabsMenus
-            tabs={tabs}
+            tabNavigationMenus={tabNavigationMenus}
             handleTabClick={handleTabClick}
             activeTab={activeTab}
           />

@@ -1,6 +1,6 @@
 import { Overview } from "../pages/dashboard/sub-pages/Overview";
 
-export const tabs = [
+export const tabNavigationMenus = [
   {
     id: 1,
     label: "Overview",
