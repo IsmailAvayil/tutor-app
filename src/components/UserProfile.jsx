@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const userProfileData = {
   user_id: 1,
   full_name: "veena",
@@ -5,12 +7,20 @@ const userProfileData = {
 };
 
 const UserProfile = () => {
+  const [isOpenProfileModal, setIsOpenProfileModal] = useState(false);
   const firstLetter = userProfileData.full_name
     ? userProfileData.full_name.charAt(0).toUpperCase()
     : "";
 
+  const handleProfileModal = () => {
+    setIsOpenProfileModal(!isOpenProfileModal);
+  };
+
   return (
-    <div className="flex gap-x-4 ml-4 l:ml-0 mb-12 lg:mb-0">
+    <div
+      className="flex gap-x-4 ml-4 l:ml-0 mb-12 lg:mb-0 cursor-pointer"
+      onClick={handleProfileModal}
+    >
       <div className="bg-[#5F9EA0] w-10 h-10 rounded-full flex items-center justify-center text-white font-semibold text-lg ">
         {userProfileData.profile_image ? (
           <img
@@ -27,7 +37,10 @@ const UserProfile = () => {
         {"  "}
         <h1 className="ml-2 font-semibold">{userProfileData.full_name}</h1>
         {/* <span>{isOpen ? "▲" : "▼"}</span> */}
-        <button className="text-[8px] text-[#5F9EA0] ml-2">▼</button>
+        <button className="text-[8px] text-[#5F9EA0] ml-2">
+          {" "}
+          <span>{isOpenProfileModal ? "▲" : "▼"}</span>
+        </button>
       </div>
     </div>
   );

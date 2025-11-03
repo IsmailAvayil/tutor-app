@@ -8,7 +8,7 @@ const HeaderNavigations = () => {
       {headerMenus.map((menu) => (
         <Link key={menu} to={menu?.path}>
           <li>
-            <div className="px-4 py-2 hover:bg-[#5F9EA0] text-[14px] rounded-md hover:text-white">
+            <div className="px-4 py-2 hover:bg-[#5F9EA0] text-[14px] rounded-md hover:text-white  focus:bg-[#5F9EA0] focus:text-white">
               {menu?.name}
             </div>
           </li>

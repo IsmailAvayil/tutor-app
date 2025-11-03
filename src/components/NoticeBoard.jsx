@@ -3,7 +3,7 @@ import React from "react";
 const NoticeBoard = () => {
   return (
     <div className="bg-white p-6">
-      <h1 className="text-[14px] font-semibold  text-[#5F9EA0] text-center">
+      <h1 className="text-[14px] font-semibold  text-[#5F9EA0] text-start">
         Notice Board
       </h1>
       <ol class="relative border-s border-l-2 border-[#5F9EA0] dark:border-gray-700 my-6">

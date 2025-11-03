@@ -56,7 +56,7 @@ const TutorStatusDatas = [
 
 const TutorStatus = ({ isUpcomingSession }) => {
   return (
-    <div className="flex flex-col gap-8 mt-6">
+    <div className="flex flex-col gap-8 mt-6 lg:h-screen">
       {TutorStatusDatas.map((card, index) => (
         <SingleTutorStatusCard
           tutorStatusData={card}

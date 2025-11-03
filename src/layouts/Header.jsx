@@ -26,7 +26,9 @@ const Header = () => {
               <div className="bg-danger absolute top-0 right-0 text-white rounded-full w-3 h-3 flex items-center justify-center">
                 <span className="text-[8px] bg-danger">2</span>
               </div>
-              <BellIcon className="w-6 h-6 " />
+              <div className="flex items-center justify-between hover:bg-[#5F9EA0] hover:text-white  rounded-full">
+                <BellIcon className="w-6 h-6 " />
+              </div>
             </div>
           </div>
         </div>

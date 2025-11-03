@@ -20,12 +20,12 @@ const NewTutorRequest = ({ setHaveTutorRequest }) => {
           alt="avatar"
           className="w-10 h-10 rounded-full object-cover"
         />
-        <div>
-          <h1 className="text-[#5F9EA0] font-bold">Tutor Request</h1>
+        <div className="">
+          <h1 className="text-[#5F9EA0] font-bold ">Tutor Request</h1>
           {newTutorRequestData.map((card) => (
             <ul
               key={card.id}
-              className="grid lg:grid-cols-3 grid-cols-1 gap-4 font-semibold"
+              className="grid lg:grid-cols-3 grid-cols-1 gap-4 font-semibold mt-6 lg:mt-0"
             >
               <li className="">Client : {card.client_name}</li>
               <li>Date : {card.date}</li>
