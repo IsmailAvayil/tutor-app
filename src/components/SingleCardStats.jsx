@@ -5,7 +5,7 @@ const SingleCardStats = ({ cardStats }) => {
     <li
       className={`bg-[${
         cardStats.cardColour
-      }] p-6 rounded-sm w-full  lg:w-1/3 ${
+      }] p-6 rounded-sm w-full grid grid-rows-3  lg:w-1/3 ${
         cardStats?.id === 1
           ? "bg-[#5F9EA0]"
           : cardStats?.id === 2
@@ -14,10 +14,10 @@ const SingleCardStats = ({ cardStats }) => {
       }
       }`}
     >
-      <h2 className="text-[#ffffff] font-medium text-[14px]">
+      <h2 className="text-[#ffffff] font-medium text-[14px]  row-span-2 ">
         {cardStats.name}
       </h2>
-      <h1 className="text-[#ffffff] text-[22px] font-semibold">
+      <h1 className="text-[#ffffff] text-[22px] font-semibold row-span-1">
         {cardStats.count}
       </h1>
     </li>
