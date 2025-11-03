@@ -36,7 +36,6 @@ const UserProfile = () => {
         <p>Hello,</p>
         {"  "}
         <h1 className="ml-2 font-semibold">{userProfileData.full_name}</h1>
-        {/* <span>{isOpen ? "▲" : "▼"}</span> */}
         <button className="text-[8px] text-[#5F9EA0] ml-2">
           {" "}
           <span>{isOpenProfileModal ? "▲" : "▼"}</span>
