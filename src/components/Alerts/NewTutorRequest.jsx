@@ -25,7 +25,7 @@ const NewTutorRequest = ({ setHaveTutorRequest }) => {
           {newTutorRequestData.map((card) => (
             <ul
               key={card.id}
-              className="grid lg:grid-cols-3 grid-cols-1 gap-4 font-semibold mt-6 lg:mt-0 text-gray-500 hover:text-gray-700"
+              className="grid lg:grid-cols-3 grid-cols-1 gap-4 font-semibold mt-6 lg:mt-0 text-gray-500 "
             >
               <li className="">Client : {card.client_name}</li>
               <li>Date : {card.date}</li>
