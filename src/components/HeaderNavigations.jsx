@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const HeaderNavigations = () => {
   return (
-    <ul className="flex lg:flex-row flex-col gap-8 font-semibold">
+    <ul className="flex lg:flex-row flex-col gap-4 font-semibold">
       {headerMenus.map((menu) => (
         <Link key={menu} to={menu?.path}>
           <li>

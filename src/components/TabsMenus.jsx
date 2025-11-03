@@ -9,8 +9,8 @@ import {
 
 const TabsMenus = ({ tabNavigationMenus, activeTab, handleTabClick }) => {
   return (
-    <div className="flex  lg:flex-row flex-col  gap-x-12 bg-white pl-4 mb-12 lg:mb-0 ">
-      <h1 className="text-md font-semibold py-4 mr-46 text-nowrap">
+    <div className="flex  lg:flex-row flex-col  gap-x-8 bg-white pl-4 mb-12 lg:mb-0 ">
+      <h1 className="text-md font-semibold py-4 mr-10 text-nowrap">
         {" "}
         Tutor Dashboard
       </h1>

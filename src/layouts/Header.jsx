@@ -11,7 +11,7 @@ const Header = () => {
       <div className=" lg:hidden flex items-center justify-end w-full ">
         <Hamburger />
       </div>
-      <div className="ml-48 px-4 hidden  lg:flex justify-between items-center w-full">
+      <div className="ml-8 px-4 hidden  lg:flex justify-between items-center w-full">
         <HeaderNavigations />
         <div className="flex items-center justify-end">
           <div className="flex gap-x-4">
