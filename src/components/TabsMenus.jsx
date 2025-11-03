@@ -4,6 +4,7 @@ import {
   QueueListIcon,
   Squares2X2Icon,
   UserIcon,
+  WindowIcon,
 } from "@heroicons/react/24/outline";
 
 const TabsMenus = ({ tabNavigationMenus, activeTab, handleTabClick }) => {
@@ -31,8 +32,12 @@ const TabsMenus = ({ tabNavigationMenus, activeTab, handleTabClick }) => {
             <BellIcon className="w-6 h-6" />
           ) : tabNavigationMenu?.id === 4 ? (
             <FilmIcon className="w-6 h-6" />
-          ) : (
+          ) : tabNavigationMenu?.id === 5 ? (
+            <WindowIcon className="w-6 h-6" />
+          ) : tabNavigationMenu?.id === 6 ? (
             <UserIcon className="w-6 h-6" />
+          ) : (
+            "null"
           )}
           {tabNavigationMenu.label}
         </button>

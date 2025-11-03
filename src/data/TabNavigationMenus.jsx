@@ -27,6 +27,12 @@ export const tabNavigationMenus = [
   },
   {
     id: 5,
+    label: "Whiteboard",
+    value: "whiteboard",
+    content: <div>Whiteboard settings go here.</div>,
+  },
+  {
+    id: 6,
     label: "Account",
     value: "account",
     content: <div>Account settings go here.</div>,

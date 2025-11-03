@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const userProfileData = {
   user_id: 1,
-  full_name: "veena",
+  full_name: "Victor",
   profile_image: "",
 };
 
