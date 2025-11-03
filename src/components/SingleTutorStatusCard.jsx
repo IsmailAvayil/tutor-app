@@ -31,7 +31,7 @@ const SingleTutorStatusCard = ({
             </li>
           </ul>
 
-          <ul className="flex gap-4 items-center  ">
+          <ul className="flex lg:gap-4 gap-2 items-center  ">
             {isUpcomingSession && (
               <button className="bg-[#5F9EA0] px-1 py-1 lg:px-2 lg:py-2 font-bold text-[6px] lg:text-[9px] text-white min-w-[60px] lg:min-w-[90px]">
                 {" "}
@@ -50,7 +50,7 @@ const SingleTutorStatusCard = ({
         </ul>
       </div>
 
-      <div class="flex col-span-3 items-center justify-center -space-x-1 overflow-hidden ">
+      <div class="flex col-span-4 lg:col-span-3 items-center justify-center -space-x-1 overflow-hidden ">
         {tutorStatusData.tutors.map((tutor, index) => (
           <img
             key={index}
