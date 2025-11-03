@@ -1,6 +1,6 @@
 import React from "react";
-import { MapPinIcon, EllipsisVerticalIcon } from "@heroicons/react/24/outline";
-import { CheckCircleIcon } from "@heroicons/react/24/solid";
+import { EllipsisVerticalIcon } from "@heroicons/react/24/outline";
+import { CheckCircleIcon, MapPinIcon } from "@heroicons/react/24/solid";
 
 const SingleTutorStatusCard = ({
   tutorStatusData,
@@ -16,11 +16,11 @@ const SingleTutorStatusCard = ({
           <CheckCircleIcon className="w-6 h-6 text-[#5F9EA0]" />
         )}
       </div>
-      <div className="col-span-8">
+      <div className="col-span-7 ">
         {" "}
-        <ul className="flex flex-col gap-2">
+        <ul className="flex flex-col gap-1">
           <ul className="flex">
-            <li className="text-gray-600 text-[11px] lg:text-[12px]">
+            <li className="text-gray-600 text-[11px] lg:text-[14px] font-semibold">
               {tutorStatusData.tutors
                 .map((tutor) =>
                   Array.isArray(tutor.name) ? tutor.name.join(", ") : tutor.name
@@ -31,16 +31,16 @@ const SingleTutorStatusCard = ({
 
           <ul className="flex gap-4 items-center  ">
             {isUpcomingSession && (
-              <button className="bg-[#5F9EA0] px-2 py-1 lg:px-4 lg:py-2 font-bold text-[8px] lg:text-[10px] text-white min-w-[60px] lg:min-w-[90px]">
+              <button className="bg-[#5F9EA0] px-1 py-1 lg:px-2 lg:py-2 font-bold text-[6px] lg:text-[9px] text-white min-w-[60px] lg:min-w-[90px]">
                 {" "}
                 {tutorStatusData.availability}
               </button>
             )}
 
-            <li className="font-semibold text-[10px] lg:text-[12px] text-black">
+            <li className="font-semibold text-[6px] lg:text-[10px] text-black">
               {tutorStatusData.teaching_date}
             </li>
-            <li className="text-[12px] lg:text-[16px] flex ">
+            <li className="text-[6px] lg:text-[10px] flex items-center ">
               <MapPinIcon className="lg:w-6 lg:h-7 w-3 h-4    text-[#5F9EA0] " />
               {tutorStatusData.teaching_mode}
             </li>
@@ -48,7 +48,7 @@ const SingleTutorStatusCard = ({
         </ul>
       </div>
 
-      <div class="flex col-span-2 items-center justify-center -space-x-1 overflow-hidden ">
+      <div class="flex col-span-3 items-center justify-center -space-x-1 overflow-hidden ">
         {tutorStatusData.tutors.map((tutor, index) => (
           <img
             key={index}
@@ -59,7 +59,7 @@ const SingleTutorStatusCard = ({
         ))}
       </div>
       <button className="col-span-1 lg:flex hidden items-center justify-center cursor-pointer hover:bg-gray-100">
-        <EllipsisVerticalIcon className="w-4 h-4 lg:h-5 lg:w-5 text-[#5F9EA0]" />
+        <EllipsisVerticalIcon className="w-4 h-4 lg:h-6 lg:w-6 text-[#5F9EA0]" />
       </button>
     </div>
   );
