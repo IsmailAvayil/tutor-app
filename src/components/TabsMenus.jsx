@@ -22,7 +22,7 @@ const TabsMenus = ({ tabNavigationMenus, activeTab, handleTabClick }) => {
             activeTab === tabNavigationMenu.value
               ? "text-[#5F9EA0] lg:border-b-3 border-[#5F9EA0] "
               : "text-gray-500 hover:text-gray-700"
-          }   py-4 text-sm font-medium transition-all duration-200 relative flex items-center gap-2`}
+          }   py-4 text-sm font-medium transition-all duration-200 relative flex items-center gap-2 cursor-pointer`}
         >
           {tabNavigationMenu.id === 1 ? (
             <Squares2X2Icon className="w-6 h-6" />

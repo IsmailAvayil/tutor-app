@@ -18,13 +18,13 @@ const statsCardDatas = [
 
 const TutorialStats = () => {
   return (
-    <div>
+    <>
       <ul className="flex lg:flex-row flex-col  gap-8">
         {statsCardDatas?.map((cardData) => (
           <SingleCardStats key={cardData.id} cardStats={cardData} />
         ))}
       </ul>
-    </div>
+    </>
   );
 };
 
